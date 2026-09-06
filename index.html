@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>For you, Dwiiijaaa ♡</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="intro" class="scene">
+  <div class="introText">for you, Dwiiijaaa</div>
+</div>
+
+<div id="flowersStart" class="scene flowerScene hidden">
+  <div class="night"></div><div id="startField"></div>
+  <div class="flowerCaption">a little something for you ♡</div>
+  <button class="pill" id="toPhotos">tap to continue</button>
+</div>
+
+<div id="picker" class="scene hidden">
+  <div class="pickerCard">
+    <div class="eyebrow">made just for her</div>
+    <h1>Choose your photos ♡</h1>
+    <p>Select the photos you want in the edit. You can choose several at once.</p>
+    <input id="photoInput" type="file" accept="image/*" multiple>
+    <label for="photoInput" class="uploadBtn">choose photos</label>
+    <div id="preview" class="preview"></div>
+    <button id="startEdit" class="mainBtn" disabled>start the edit ♡</button>
+    <p class="hint">Tip: 6–12 portrait/landscape photos work best.</p>
+  </div>
+</div>
+
+<div id="edit" class="scene hidden">
+  <div id="photoStage"></div>
+  <div class="editOverlay">
+    <div class="made">MADE IN JAPAN</div>
+    <div class="sub">for my favourite girl ♡</div>
+  </div>
+  <button id="nextPhoto" class="tapHint">tap anywhere</button>
+  <audio id="music" preload="auto" loop></audio>
+</div>
+
+<div id="flowersEnd" class="scene flowerScene hidden">
+  <div class="night"></div><div id="endField"></div>
+  <div class="endMessage">and that's all...<br><span>for you, Dwiiijaaa ♡</span></div>
+  <button class="pill" id="again">again 🌷</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
